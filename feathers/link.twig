@@ -1,0 +1,6 @@
+{% extends "content/post.twig" %}
+
+{% block content %}
+                        <h4 class="title"><a href="$post.source" class="link">$post.name</a></h4>
+                        ${ post.description | read_more }
+{% endblock %}

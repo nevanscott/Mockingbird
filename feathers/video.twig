@@ -1,0 +1,11 @@
+{% extends "content/post.twig" %}
+
+{% block content %}
+                        {% if post.pinned %}
+                        ${ feathers['video'].embed_tag_for(post, 660) }
+                        {% else %}
+                        ${ feathers['video'].embed_tag_for(post, 520) }
+                        {% endif %}
+                        <br />
+                        ${ post.caption | read_more }
+{% endblock %}

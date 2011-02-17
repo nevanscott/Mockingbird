@@ -1,0 +1,11 @@
+{% extends "content/post.twig" %}
+
+{% block content %}
+                        {% if post.pinned %}
+                        ${ feathers['photo'].image_link(post, 660) }
+                        {% else %}
+                        ${ feathers['photo'].image_link(post, 520) }
+                        {% endif %}
+                        <div class="clear"></div>
+                        ${ post.caption | read_more }
+{% endblock %}
