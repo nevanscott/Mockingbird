@@ -54,10 +54,22 @@ body {
 	font-size: 16px;
 	line-height: 1.5em;
 	color: #444;
+	}
+#header, #wrapper, #controls ul {
 	width: 700px;
-	margin: 0 auto;
+	margin: 0 auto;	
 	padding: 0 20px;
 	}
+#controls {
+	background: #EEE;
+	-webkit-box-shadow: inset 0 -2px 3px rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 -2px 3px rgba(0,0,0,.1);
+	box-shadow: inset 0 -2px 3px rgba(0,0,0,.1);
+	}
+#controls:after{clear:both;display:block;visibility:hidden;overflow:hidden;height:0 !important;line-height:0;font-size:xx-large;content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
+#controls{*zoom:1;}
+#controls li { float: left; }
+#controls li a { display: block; margin-right: 20px; line-height: 2em; }
 
 a {
 	text-decoration: none;
@@ -124,6 +136,10 @@ blockquote {
 	}
 .post:hover .controls {
 	visibility: visible;
+	}
+
+.page {
+	margin: 0 90px;
 	}
 
 form.inline_edit {
